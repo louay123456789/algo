@@ -1,0 +1,18 @@
+ALGORITHM first
+VAR
+    c:=CHAR:=""
+    nb_char:=INTEGER
+    nb_vo:=INTEGER
+    nb_word:=INTEGER
+BEGIN
+    WHILE (c<>".") DO
+        read(c)
+        nb_char:=nb_char+1
+        IF (c="e"or c="a"or c="i") THEN
+            nb_vo:=nb_vo+1
+        END_IF
+        IF (c="") THEN
+            nb_word:=nb_word+1
+        END_IF
+    END_WHILE
+END
